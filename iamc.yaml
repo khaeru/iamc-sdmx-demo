@@ -1,0 +1,53 @@
+concepts:
+  - id: MODEL
+    name: Model
+    description: A computer model producing projections.
+  - id: SCENARIO
+    name: Scenario
+    description: A scenario of assumptions for projections.
+  - id: REGION
+    name: Region
+    description: Country or country group.
+  - id: VARIABLE
+    name: Variable
+    description: Model output variable.
+  # Rather than the IAMC names of 'Year' and 'Unit', we use ids from the SDMX
+  # Cross Domain Concept Scheme (2.0), to indicate these are the same.
+  - id: TIME_PERIOD
+    name: Time period
+  - id: UNIT_MEASURE
+    name: Unit of measure
+
+dimensions:
+  MODEL: MODEL
+  SCENARIO: SCENARIO
+  REGION: REGION
+  VARIABLE: VARIABLE
+  YEAR: TIME_PERIOD
+
+attributes:
+  UNIT: UNIT_MEASURE
+
+variables:
+  - 'Primary Energy'
+  - 'Primary Energy|Coal'
+  - 'Primary Energy|Coal|w/ CCS'
+  - 'Primary Energy|Coal|w/o CCS'
+  - 'Primary Energy|Oil'
+  - 'Primary Energy|Oil|w/ CCS'
+  - 'Primary Energy|Oil|w/o CCS'
+  - 'Primary Energy|Gas'
+  - 'Primary Energy|Gas|w/ CCS'
+  - 'Primary Energy|Gas|w/o CCS'
+  - 'Primary Energy|Biomass'
+  - 'Primary Energy|Biomass|w/ CCS'
+  - 'Primary Energy|Biomass|w/o CCS'
+  - 'Primary Energy|Nuclear'
+  - 'Primary Energy|Non-Biomass Renewables'
+  - 'Primary Energy|Hydro'
+  - 'Primary Energy|Wind'
+  - 'Primary Energy|Solar'
+  - 'Primary Energy|Geothermal'
+  - 'Primary Energy|Ocean'
+  - 'Primary Energy|Secondary Energy Trade'
+  - 'Primary Energy|Other'
